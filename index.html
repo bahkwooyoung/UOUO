@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14140f">
+<title>박우영 | PARK WOO YOUNG — Actor</title>
+<meta name="description" content="배우 박우영 공식 프로필 — Profile, Filmography, Contact">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+KR:wght@400;600;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/static/pretendard.css');
+
+:root{
+  --ink:#14140f;
+  --film:#1e1e18;
+  --paper:#edeae2;
+  --slate:#8b8a83;
+  --signal:#e23a55;
+
+  --serif:'Noto Serif KR','Batang',serif;
+  --display:'Bebas Neue',Impact,sans-serif;
+  --body:'Pretendard',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+  --mono:'Space Mono','SF Mono',Consolas,monospace;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--body);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--signal);outline-offset:4px;}
+img,svg{display:block;max-width:100%;}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem);}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:.78rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--signal);
+  display:flex;align-items:center;gap:.75rem;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--signal);}
+
+/* ---------- NAV ---------- */
+header.site-nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem clamp(1.25rem,5vw,3rem);
+  background:linear-gradient(to bottom, rgba(20,20,15,.9), transparent);
+}
+.site-nav .mark{font-family:var(--serif);font-weight:700;font-size:1.15rem;}
+.site-nav nav a{font-family:var(--mono);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;}
+
+/* ---------- HERO ---------- */
+.hero{
+  min-height:100vh;min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;
+  padding:7rem 0 4.5rem;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(2rem,6vw,5rem);align-items:center;
+}
+.hero-name-kr{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(3rem,9vw,6.2rem);
+  line-height:.95;letter-spacing:-.01em;
+}
+.hero-name-en{
+  font-family:var(--display);
+  font-size:clamp(1.3rem,4.2vw,2.4rem);
+  letter-spacing:.2em;color:var(--slate);
+  margin-top:.6rem;
+}
+.hero-tagline{
+  margin-top:2rem;font-size:clamp(1.05rem,2vw,1.3rem);
+  max-width:30ch;opacity:.92;
+}
+.hero-photo{
+  aspect-ratio:3/4;border:1px dashed var(--slate);border-radius:2px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;
+  color:var(--slate);position:relative;
+}
+.hero-photo svg{width:42px;height:42px;opacity:.7;}
+.hero-photo .ph-label{font-family:var(--mono);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;}
+.hero-photo .ph-sub{font-size:.78rem;max-width:20ch;text-align:center;}
+.hero-photo::before,.hero-photo::after{content:"";position:absolute;width:14px;height:14px;border:1px solid var(--slate);}
+.hero-photo::before{top:10px;left:10px;border-right:none;border-bottom:none;}
+.hero-photo::after{bottom:10px;right:10px;border-left:none;border-top:none;}
+
+.scroll-cue{
+  position:absolute;bottom:1.5rem;left:clamp(1.25rem,5vw,3rem);
+  display:flex;align-items:center;gap:.6rem;
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--slate);
+}
+.scroll-cue .line{width:1px;height:32px;background:rgba(139,138,131,.35);position:relative;overflow:hidden;}
+.scroll-cue .line::after{content:"";position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--signal);animation:cue 2.4s ease-in-out infinite;}
+@keyframes cue{to{top:100%;}}
+
+/* ---------- SLATE / VITALS ---------- */
+.slate-bar{border-top:1px solid var(--film);border-bottom:1px solid var(--film);padding:2.5rem 0;}
+.slate-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:1.5rem;}
+.slate-item dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--slate);text-transform:uppercase;margin-bottom:.6rem;}
+.slate-item dd{font-size:1.05rem;}
+.tag-row{display:flex;flex-wrap:wrap;gap:.5rem;}
+.tag{border:1px solid var(--slate);color:var(--slate);padding:.3rem .75rem;font-family:var(--mono);font-size:.76rem;border-radius:2px;}
+.tag.is-signal{border-color:var(--signal);color:var(--signal);}
+
+/* ---------- SECTION generic ---------- */
+.section{padding:6rem 0;}
+.section-title{font-family:var(--serif);font-weight:700;font-size:clamp(1.7rem,4vw,2.5rem);margin-top:.75rem;}
+
+/* ---------- PROFILE ---------- */
+.profile-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(2rem,6vw,5rem);margin-top:2.5rem;align-items:start;}
+.profile-bio p{font-size:1.08rem;line-height:1.9;opacity:.95;}
+.profile-bio p + p{margin-top:1.25rem;color:var(--slate);}
+.profile-en{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--slate);border-left:1px solid var(--signal);padding-left:1.5rem;}
+
+/* ---------- FILMOGRAPHY / REEL (signature) ---------- */
+.reel{margin-top:2.5rem;border-left:1px solid var(--film);padding-left:clamp(1rem,3vw,2rem);}
+.frame{display:grid;grid-template-columns:60px 64px 1fr auto;align-items:baseline;gap:1.25rem;padding:1.5rem 0;border-bottom:1px solid var(--film);}
+.frame:first-child{padding-top:0;}
+.frame-num{font-family:var(--mono);color:var(--signal);font-size:.95rem;}
+.frame-year{font-family:var(--mono);color:var(--slate);font-size:.88rem;}
+.frame-title{font-family:var(--serif);font-size:1.15rem;font-weight:600;}
+.frame-role{font-family:var(--mono);font-size:.75rem;color:var(--slate);text-transform:uppercase;letter-spacing:.06em;text-align:right;white-space:nowrap;}
+.frame.is-empty .frame-title{color:var(--slate);font-style:italic;font-weight:400;}
+
+/* ---------- CONTACT ---------- */
+.contact{background:var(--film);padding:6rem 0;}
+.cut-mark{font-family:var(--display);font-size:clamp(3rem,10vw,5.5rem);color:var(--signal);line-height:.9;}
+.contact-list{list-style:none;margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:2.5rem;}
+.contact-item dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--slate);text-transform:uppercase;margin-bottom:.5rem;}
+.contact-item dd a{font-size:1.25rem;font-family:var(--serif);border-bottom:1px solid transparent;transition:border-color .2s;}
+.contact-item dd a:hover, .contact-item dd a:focus-visible{border-color:var(--signal);}
+
+footer{padding:2.5rem clamp(1.25rem,5vw,3rem);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:var(--mono);font-size:.7rem;color:var(--slate);letter-spacing:.04em;}
+
+/* ---------- reveal-on-scroll ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.is-visible{opacity:1;transform:none;}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  .reveal{opacity:1;transform:none;transition:none;}
+  .scroll-cue .line::after{animation:none;}
+}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-photo{order:-1;max-width:260px;margin:0 auto;}
+  .profile-grid{grid-template-columns:1fr;}
+  .profile-en{border-left:none;border-top:1px solid var(--signal);padding-left:0;padding-top:1rem;}
+  .slate-grid{grid-template-columns:1fr;gap:1.5rem;}
+  .frame{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 0;}
+  .frame-role{text-align:left;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="mark">박우영</div>
+  <nav><a href="#contact">CONTACT</a></nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="hero-name-kr">박우영</h1>
+      <div class="hero-name-en"><!-- TODO: 공식 로마자 표기로 확인/수정 -->PARK WOO YOUNG</div>
+      <p class="hero-tagline">몸의 언어로 먼저 캐릭터를 이해하는 배우.</p>
+    </div>
+    <div class="hero-photo">
+      <!-- TODO: 이 블록을 <img src="사진파일" alt="박우영 프로필 사진"> 로 교체 -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="13" r="4.2"/><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/></svg>
+      <div class="ph-label">Profile Photo</div>
+      <div class="ph-sub">이 자리에 실제 프로필 사진을 넣어주세요</div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<div class="wrap slate-bar reveal">
+  <div class="eyebrow">Slate</div>
+  <dl class="slate-grid">
+    <div class="slate-item">
+      <dt>Debut</dt>
+      <dd><!-- TODO: 실제 데뷔 연도·작품으로 교체 -->[연도] · [작품명]</dd>
+    </div>
+    <div class="slate-item">
+      <dt>Based</dt>
+      <dd>Seoul, Korea</dd>
+    </div>
+    <div class="slate-item">
+      <dt>Specialty</dt>
+      <dd class="tag-row">
+        <span class="tag is-signal">파쿠르</span>
+        <span class="tag is-signal">영어</span>
+        <span class="tag">+ 특기 추가</span>
+      </dd>
+    </div>
+  </dl>
+</div>
+
+<section class="section wrap reveal" id="profile">
+  <div class="eyebrow">Profile</div>
+  <h2 class="section-title">몸으로 먼저 읽는 인물</h2>
+  <div class="profile-grid">
+    <div class="profile-bio">
+      <p>카메라 앞에서든, 몸으로 부딪히는 순간에서든 박우영은 같은 질문을 던진다 — 이 인물은 어떻게 움직이는가. 파쿠르로 다져온 신체 감각과 배우로서의 훈련을 함께 쌓아가며, 대사보다 몸의 리듬으로 캐릭터를 먼저 이해하는 연기를 지향한다.</p>
+      <p><!-- TODO: 실제 이력·수상·활동 소개로 교체 -->[여기에 실제 경력, 수상 내역, 참여 프로젝트 등을 채워주세요.]</p>
+    </div>
+    <p class="profile-en">An actor who reads a character through movement before words.</p>
+  </div>
+</section>
+
+<section class="section wrap reveal" id="filmography">
+  <div class="eyebrow">Filmography</div>
+  <h2 class="section-title">Reel</h2>
+  <div class="reel">
+    <!-- TODO: 아래 두 프레임을 실제 출연작 정보로 교체하세요 -->
+    <div class="frame">
+      <div class="frame-num">0001</div>
+      <div class="frame-year">[연도]</div>
+      <div class="frame-title">[작품명을 입력하세요]</div>
+      <div class="frame-role">[배역] · [드라마/영화]</div>
+    </div>
+    <div class="frame">
+      <div class="frame-num">0002</div>
+      <div class="frame-year">[연도]</div>
+      <div class="frame-title">[작품명을 입력하세요]</div>
+      <div class="frame-role">[배역] · [드라마/영화]</div>
+    </div>
+    <div class="frame is-empty">
+      <div class="frame-num">0003</div>
+      <div class="frame-year">—</div>
+      <div class="frame-title">다음 작품을 준비하고 있습니다</div>
+      <div class="frame-role"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact reveal" id="contact">
+  <div class="wrap">
+    <div class="cut-mark">CUT.</div>
+    <div class="eyebrow" style="margin-top:2rem;">Contact</div>
+    <dl class="contact-list">
+      <div class="contact-item">
+        <dt>Email</dt>
+        <!-- TODO: Zoho에서 만든 실제 비즈니스 이메일로 교체 -->
+        <dd><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></dd>
+      </div>
+      <div class="contact-item">
+        <dt>Instagram</dt>
+        <!-- TODO: 실제 인스타그램 핸들/링크로 교체 -->
+        <dd><a href="#">@yourhandle</a></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <span>© 박우영. All rights reserved.</span>
+  <span>Park Woo Young Portfolio</span>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
